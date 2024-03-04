@@ -1,0 +1,32 @@
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+
+}
+
+.card-container .card{
+    width: 300px;
+    margin: 30px 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 7px 17px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 7px 17px -14px rgba(0,0,0,0.75);
+    box-shadow: 2px 7px 17px -14px rgba(0,0,0,0.75);
+}
+
+.img-container{
+width: 300px;
+    text-align: center;
+}
+.img-container img{
+ height:10rem;
+ width: auto;
+ 
+}
+
+.product-card-flex{
+    display: flex;
+    justify-content: space-between;
+}
+

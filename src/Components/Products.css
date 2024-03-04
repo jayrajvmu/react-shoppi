@@ -1,0 +1,13 @@
+.content{
+    padding: 20px;
+}
+
+.categorydata{
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+
+.categorydata:hover{
+    color: blue !important;
+}

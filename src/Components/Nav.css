@@ -1,0 +1,12 @@
+.navbar-brand{
+    font-size: 40px;
+}
+
+.navbar{
+ 
+
+    -webkit-box-shadow: 2px 7px 17px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 7px 17px -14px rgba(0,0,0,0.75);
+    box-shadow: 2px 7px 17px -14px rgba(0,0,0,0.75);
+    
+}

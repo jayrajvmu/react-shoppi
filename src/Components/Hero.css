@@ -1,0 +1,17 @@
+.hero-bg-color{
+    background-color: #e3edf6;
+}
+.heroheadline{
+    line-height: 50px;
+}
+
+.hero-button{
+    background-color: #ffffff;
+    border: none;
+    border-radius: .375rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
