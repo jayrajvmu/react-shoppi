@@ -15,8 +15,8 @@ function App() {
 
         <Routes>
 
-          <Route path="/" element={<><Hero /><Homepagecontent/></>} />
-          <Route path="/products" element={<><Products /></>} />
+          <Route path="/react-shoppi" element={<><Hero /><Homepagecontent/></>} />
+          <Route path="/react-shoppi/products" element={<><Products /></>} />
 
           
           <Route path="*" element={<Nopage />} />
