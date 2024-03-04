@@ -16,6 +16,7 @@ export default function Nav() {
         <div className=" collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav ms-auto poppins-medium">
             <li className="nav-item">
+              
               <Link className="nav-link mx-2 active" aria-current="page" to="/react-shoppi/products">Products</Link>
             </li>
             <li className="nav-item dropdown">
