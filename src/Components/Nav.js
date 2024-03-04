@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-light p-3">
       <div className="container-fluid">
-        <Link className="navbar-brand anta-regular px-3" to="/">Shoppy</Link>
+        <Link className="navbar-brand anta-regular px-3" to="/react-shoppi">Shoppy</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -16,7 +16,7 @@ export default function Nav() {
         <div className=" collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav ms-auto poppins-medium">
             <li className="nav-item">
-              <Link className="nav-link mx-2 active" aria-current="page" to="/products">Products</Link>
+              <Link className="nav-link mx-2 active" aria-current="page" to="/react-shoppi/products">Products</Link>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
