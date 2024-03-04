@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-shoppi/static/css/main.3e62c283.css",
+    "main.js": "/react-shoppi/static/js/main.c88b165a.js",
+    "index.html": "/react-shoppi/index.html",
+    "main.3e62c283.css.map": "/react-shoppi/static/css/main.3e62c283.css.map",
+    "main.c88b165a.js.map": "/react-shoppi/static/js/main.c88b165a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e62c283.css",
+    "static/js/main.c88b165a.js"
+  ]
+}
