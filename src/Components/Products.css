@@ -11,3 +11,7 @@
 .categorydata:hover{
     color: blue !important;
 }
+
+.dropdown{
+    width: 100%;
+}
