@@ -5,13 +5,15 @@ import "./Products.css";
 
 export default function Product() {
   let [productsData, setproductsData] = useState();
+  let [productsData2, setproductsData2] = useState();
+
   let category = [];
 
   let [categorytype, setCategorytype] = useState();
 
   let [acendingsort, setAcendingsort ]=useState(1);
   let [decendingsort, setDecendingsort ]=useState(1);
-
+  let productDataforsort={};
 
   useEffect(() => {
     let getAPI = () => {
@@ -19,7 +21,13 @@ export default function Product() {
         .then((response) => response.json())
         .then((json) => {
           setproductsData(json);
+          setproductsData2(json);
+
+console.log("working");
+
         });
+
+
     };
     getAPI();
 
@@ -28,17 +36,23 @@ export default function Product() {
     if (category.indexOf(element.category) === -1) {
       category.push(element.category);
     }
+
+
   });
+
+  productsData != undefined&& ( productDataforsort = [...productsData.products,]    );
+
 
 
   let changeCategory = (e) => {
 
     let categoryTotalData = document.getElementsByClassName('categorydata');
 
+    document.getElementById("mySidebar").style.width = "0";
 
     for (let data of categoryTotalData) {
 
-      data.style.color = "black";
+      data.style.color = "white";
 
     }
 
@@ -67,39 +81,60 @@ export default function Product() {
     setDecendingsort(1);
   }
 
+let openNav=()=> {
+  document.getElementById("mySidebar").style.width = "250px";
+}
+
+let closeNav=()=> {
+  document.getElementById("mySidebar").style.width = "0";
+}
+
   return (
 
     <div>
-      <div className='container-fluid content'>
-        <div className='row'>
-          <div className='col-2'>
+      <div className='container-fluid content' id='content'>
 
-            <h2 className='poppins-semibold f-20'>Category</h2>
-
-            <div>
-              {category != undefined && category.map((product, index) => {
-
-                return (
-
-                  <div key={index} className='poppins-light f-14 categorydata' onClick={changeCategory} id={product}>
-
-
-                    {product}
-
-                  </div>
-                )
-              })}
+      <div className=''>
+            
 
 
 
+<div id="mySidebar" className="sidebar">
+  <a href="javascript:void(0)" className="closebtn"onClick={closeNav}>×</a>
 
-            </div>
+  <h2 className='poppins-semibold f-20'>Category</h2>
+
+<div>
+  {category != undefined && category.map((product2, index) => {
+
+    return (
+
+      <div key={index} className='poppins-light f-14 categorydata' onClick={changeCategory} id={product2}>
+
+
+        {product2}
+
+      </div>
+    )
+  })}
+
+
+
+
+</div>
+
+</div>
 
           </div>
+        <div className='row'>
+       
 
-          <div className='col-10'>
+          <div className='col'>
 
             <div className='brudcrum d-flex d-flex d-flex justify-content-between'>
+
+            <button className="openbtn" onClick={openNav}>☰ Category</button>  
+
 
               <div>
 
@@ -107,6 +142,8 @@ export default function Product() {
 
 
               </div>
+
+
 
               <div>
 
@@ -139,11 +176,17 @@ export default function Product() {
 
                 categorytype ? productsData != undefined && 
                 
-                
+
                 
                (
+               
+
                 
-                productsData.products.sort((a, b) => a.price > b.price? acendingsort:decendingsort).map((product, index) => {
+                productDataforsort.sort((a, b) => a.price > b.price? acendingsort:decendingsort).map((product, index) => {
+
+                  console.log(acendingsort);
+                  console.log(decendingsort);
+
 
                   if (categorytype == product.category) {
                     return (
