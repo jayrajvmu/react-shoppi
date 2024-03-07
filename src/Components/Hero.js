@@ -5,7 +5,7 @@ import "./Hero.css";
 export default function Hero(){
 
     return(
-        <div className="container-fluid  ">
+        <div className="container-fluid top-margin ">
 
 
 <div className="row align-items-center hero-bg-color py-4">

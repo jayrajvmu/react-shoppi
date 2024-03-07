@@ -91,7 +91,7 @@ let closeNav=()=> {
 
   return (
 
-    <div>
+    <div className='top-margin'>
       <div className='container-fluid content' id='content'>
 
       <div className=''>
@@ -129,7 +129,7 @@ let closeNav=()=> {
         <div className='row'>
        
 
-          <div className='col'>
+          <div className='col '>
 
             <div className='brudcrum d-flex d-flex d-flex justify-content-between'>
 

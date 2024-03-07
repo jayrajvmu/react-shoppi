@@ -92,4 +92,11 @@
   .grey-bg-color{
     background-color: #f3f4f6;
   }
-  
+  .top-margin{
+    margin-top: 100px;
+  }
+  .brudcrum{
+    position: sticky;
+    top: 120px;
+    z-index: 1000;
+  }

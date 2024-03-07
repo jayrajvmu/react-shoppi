@@ -19,7 +19,7 @@ export default function Nav() {
   }
 
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light p-3">
+    <nav className="navbar fixed-top navbar-expand-md navbar-light bg-light p-3">
       <div className="container-fluid">
         <Link className="navbar-brand anta-regular px-3" to="/react-shoppi" onClick={collapseNav}>Shoppy</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
