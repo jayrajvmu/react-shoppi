@@ -102,14 +102,14 @@ let closeNav=()=> {
 <div id="mySidebar" className="sidebar">
   <a href="javascript:void(0)" className="closebtn"onClick={closeNav}>×</a>
 
-  <h2 className='poppins-semibold f-16-rem'>Category</h2>
+  <h2 className='poppins-semibold f-16'>Category</h2>
 
 <div>
   {category != undefined && category.map((product2, index) => {
 
     return (
 
-      <div key={index} className='poppins-light f-14-rem categorydata' onClick={changeCategory} id={product2}>
+      <div key={index} className='poppins-light f-14 categorydata' onClick={changeCategory} id={product2}>
 
 
         {product2}
@@ -133,7 +133,7 @@ let closeNav=()=> {
 
             <div className='brudcrum d-flex d-flex d-flex justify-content-between'>
 
-            <button className="openbtn f-16-rem" onClick={openNav}>☰</button>  
+            <button className="openbtn f-16" onClick={openNav}>☰</button>  
 
 
               <div className='hidemobile'>
