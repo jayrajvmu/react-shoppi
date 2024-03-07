@@ -100,9 +100,9 @@ let closeNav=()=> {
 
 
 <div id="mySidebar" className="sidebar">
-  <a href="javascript:void(0)" className="closebtn"onClick={closeNav}>×</a>
+  <a className="closebtn"onClick={closeNav}>×</a>
 
-  <h2 className='poppins-semibold f-16'>Category</h2>
+  <h2 className='poppins-semibold f-16 pl-20 color-white'>Category</h2>
 
 <div>
   {category != undefined && category.map((product2, index) => {

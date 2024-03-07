@@ -3,9 +3,10 @@
 }
 
 .categorydata{
-    padding: 5px 0;
+    padding: 5px 0 0 20px;
     cursor: pointer;
     color: #fff;
+
 }
 
 
@@ -65,7 +66,14 @@
   }
 
 
+  .pl-20{
+    padding-left: 20px;
 
+  }
+
+.color-white{
+  color: #fff;
+}
   @media only screen and (max-width: 576px) {
     .hidemobile{
         display: none;
