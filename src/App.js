@@ -5,6 +5,8 @@ import Nopage from "./Components/Nopage";
 import Hero from "./Components/Hero";
 import Homepagecontent from "./Components/Homepagecontent";
 import Products from "./Components/Products"
+import Product from "./Components/Product"
+
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
 
           <Route path="/react-shoppi" element={<><Hero /><Homepagecontent/></>} />
           <Route path="/react-shoppi/products" element={<><Products /></>} />
+          <Route path="/react-shoppi/product/:id" element={<><Product /></>} />
+
 
           
           <Route path="*" element={<Nopage />} />

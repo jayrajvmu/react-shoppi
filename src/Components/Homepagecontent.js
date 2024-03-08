@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import "../App.css";
 import "./Homepagecontent.css";
 
@@ -40,7 +41,18 @@ export default function
     return (
         <div className="card"  key={product.id}>
 
-            <div className='img-container'><img src={product.images[0]} className="card-img-top product-image" alt="..."/></div>
+            <div className='img-container'>
+
+
+              <Link to={"/react-shoppi/product/"+product.id}>
+              
+              
+              
+              <img src={product.images[0]} className="card-img-top product-image" alt="..."/>
+
+              </Link>
+              
+              </div>
         <div className="card-body">
 
         <div className="card-title poppins-light f-14">{product.category}</div>
