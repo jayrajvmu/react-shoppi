@@ -112,6 +112,8 @@ export default function Product() {
 
                                         hbingley1
 
+                                        
+
                                     </div>
 
                                     <div className="d-flex align-items-center text-warning">
