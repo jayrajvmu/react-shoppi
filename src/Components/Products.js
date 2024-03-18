@@ -202,7 +202,9 @@ let closeNav=()=> {
 
                           <div className='product-card-flex'>
 
-                            <div className='left'> <div className="card-title poppins-light f-16"><span className="badge rounded-pill bg-danger">{product.rating}</span> </div>
+                            <div className='left'>
+                              
+                               <div className="card-title poppins-light f-16"><span className="badge rounded-pill bg-danger">{product.rating}</span> </div>
 
                               <div className="card-title poppins-light f-14"><del >${product.price}</del> </div>
 
